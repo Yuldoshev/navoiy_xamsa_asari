@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:navoiy_app/model/book_row.dart';
 import 'package:navoiy_app/test/home.dart';
 import 'package:navoiy_app/ui/author.dart';
-import 'package:navoiy_app/ui/home.dart';
 
 class BookShelf extends StatefulWidget {
   @override
@@ -94,7 +93,11 @@ class _BookShelfState extends State<BookShelf> {
                               minWidth: 50.0,
                               onPressed: () {
                                 setState(() {
-                                  Navigator.push(context, MaterialPageRoute(builder: (context) => BookShelf(),));
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => BookShelf(),
+                                      ));
                                 });
                               },
                               color: Colors.orange[50],
@@ -108,7 +111,9 @@ class _BookShelfState extends State<BookShelf> {
                             ),
                           ),
                         ),
-                        SizedBox(width: 5,),
+                        SizedBox(
+                          width: 5,
+                        ),
                         Expanded(
                           child: new ClipRRect(
                             borderRadius: new BorderRadius.circular(50.0),
@@ -116,7 +121,11 @@ class _BookShelfState extends State<BookShelf> {
                               minWidth: 50.0,
                               onPressed: () {
                                 setState(() {
-                                  Navigator.push(context, MaterialPageRoute(builder: (context) => Home(),));
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => Home(),
+                                      ));
                                 });
                               },
                               color: Colors.orange[50],
@@ -130,7 +139,9 @@ class _BookShelfState extends State<BookShelf> {
                             ),
                           ),
                         ),
-                        SizedBox(width: 5,),
+                        SizedBox(
+                          width: 5,
+                        ),
                         Expanded(
                           child: new ClipRRect(
                             borderRadius: new BorderRadius.circular(50.0),
@@ -138,7 +149,11 @@ class _BookShelfState extends State<BookShelf> {
                               minWidth: 50.0,
                               onPressed: () {
                                 setState(() {
-                                  Navigator.push(context, MaterialPageRoute(builder: (context) => Author(),));
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => Author(),
+                                      ));
                                 });
                               },
                               color: Colors.orange[50],
@@ -162,6 +177,24 @@ class _BookShelfState extends State<BookShelf> {
           ],
         ),
       ),
+      // floatingActionButton: FloatingActionButton(
+      //   backgroundColor: Colors.orangeAccent,
+      //   elevation: 5.0,
+      //   tooltip: 'Mualliflar',
+      //   onPressed: () {
+      //     AwesomeDialog(context: context, animType: AnimType.SCALE,  customHeader: Icon(
+      //       Icons.brightness_auto_rounded,
+      //       size: 100,
+      //       // ignore: deprecated_member_use
+      //     ), title: "Dastur muallifi: Yuldosheva Mehriniso", desc: "Dasturdagi asosiy ma'lumotlar va test savollari Alisher Navoiy nomidagi ToshDO'TAUning O‘zbek adabiyoti tarixi va folklor kafedrasi dotsentlari Karomat Mullaxo‘jaeva hamda Dilnavoz Yusupovalar ishtirokida tayyorlandi.", btnOk: FlatButton(
+      //       child: Text('Orqaga'),
+      //       onPressed: () {
+      //         Navigator.of(context).pop();
+      //       },
+      //     ), btnOkOnPress: () {},  ).show();
+      //   },
+      //   child: Icon(Icons.brightness_auto_rounded),
+      // ),
     );
   }
 }

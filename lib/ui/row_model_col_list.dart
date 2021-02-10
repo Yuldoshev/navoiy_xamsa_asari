@@ -27,7 +27,7 @@ class homeList extends StatelessWidget {
                 ),
               ),
               child: new Image(
-                image: new AssetImage(model.image),
+                image: new AssetImage('assets/images/logos.jpg'),
                 height: 92.0,
                 width: 92.0,
               ),
@@ -49,7 +49,11 @@ class homeList extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           new Container(height: 4.0),
-          new Text(model.number_nat, style: headerTextStyle, textAlign: TextAlign.center,),
+          new Text(
+            model.number_nat,
+            style: headerTextStyle,
+            textAlign: TextAlign.center,
+          ),
         ],
       ),
     );
@@ -62,10 +66,10 @@ class homeList extends StatelessWidget {
         color: Colors.white, //Color(0xFF333366),
         shape: BoxShape.rectangle,
         borderRadius: new BorderRadius.circular(8.0),
-        border: Border.all(color: Colors.blue),
+        border: Border.all(color: Colors.orange[400]),
         boxShadow: <BoxShadow>[
           new BoxShadow(
-            color: Colors.blue[100],
+            color: Colors.orange[300],
             blurRadius: 10.0,
             offset: new Offset(0.0, 10.0),
           ),
@@ -74,24 +78,25 @@ class homeList extends StatelessWidget {
     );
 
     return new Container(
-        height: 120.0,
-        margin: const EdgeInsets.symmetric(
-          vertical: 16.0,
-          horizontal: 24.0,
-        ),
-        child: new Stack(
-          children: <Widget>[
-            Container(
-              child: Align(
-                alignment: Alignment.topLeft,
-                child: Image.asset(
-                  'assets/images/AboutUsTop.png',
-                ),
+      height: 120.0,
+      margin: const EdgeInsets.symmetric(
+        vertical: 16.0,
+        horizontal: 24.0,
+      ),
+      child: new Stack(
+        children: <Widget>[
+          Container(
+            child: Align(
+              alignment: Alignment.topLeft,
+              child: Image.asset(
+                'assets/images/AboutUsTop.png',
               ),
             ),
-            planetCard,
-            planetThumbnail,
-          ],
-        ));
+          ),
+          planetCard,
+          planetThumbnail,
+        ],
+      ),
+    );
   }
 }

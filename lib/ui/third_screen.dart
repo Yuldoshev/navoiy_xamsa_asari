@@ -32,7 +32,7 @@ class _ThirdScreenState extends State<ThirdScreen> {
                     flexibleSpace: FlexibleSpaceBar(
                       title: Text(
                         "Layli va Majnun",
-                        style: TextStyle(backgroundColor: Colors.orangeAccent[100], fontFamily: 'Lobster', fontSize: 17, color: Colors.black87),
+                        style: TextStyle(backgroundColor: Colors.orange[400], fontFamily: 'Lobster', fontSize: 17, color: Colors.black87),
                         textAlign: TextAlign.center,
                       ),
                       centerTitle: true,

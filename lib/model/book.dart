@@ -1,6 +1,3 @@
-import 'package:navoiy_app/model/detail_model.dart';
-import 'package:navoiy_app/ui/second_screen.dart';
-
 class Book {
   String asset;
   String title;
@@ -16,4 +13,3 @@ List<Book> books = [
   Book('assets/images/owl.png', 'Xamsa 4-tom', ''),
   Book('assets/images/owl.png', 'Xamsa 5-tom', ''),
 ];
-

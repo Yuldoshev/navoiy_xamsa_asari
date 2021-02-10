@@ -32,7 +32,7 @@ class _FirstScreenState extends State<FirstScreen> {
                     flexibleSpace: FlexibleSpaceBar(
                       title: Text(
                         "Hayrat ul-Abror",
-                        style: TextStyle(backgroundColor: Colors.orangeAccent[100] ,fontFamily: 'Lobster', fontSize: 17, color: Colors.black87),
+                        style: TextStyle(backgroundColor: Colors.orange[400] ,fontFamily: 'Lobster', fontSize: 17, color: Colors.black87),
                         textAlign: TextAlign.center,
                       ),
                       centerTitle: true,
